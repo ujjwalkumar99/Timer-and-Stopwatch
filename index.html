@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialistic Timer and Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="timer-stopwatch">
+            <div class="timer">
+                <div class="icon-container">
+                    <i class="fas fa-stopwatch fa-3x"></i>
+                </div>
+                <h1>Timer</h1>
+                <div class="time" id="timer-display">00:00:00:00</div>
+                <button class="start" onclick="startTimer()">
+                    <i class="fas fa-play"></i> Start
+                </button>
+                <button class="stop" onclick="stopTimer()">
+                    <i class="fas fa-pause"></i> Pause
+                </button>
+                <button class="reset" onclick="resetTimer()">
+                    <i class="fas fa-stop"></i> Stop
+                </button>
+            </div>
+            <div class="stopwatch">
+                <div class="icon-container">
+                    <i class="fas fa-clock fa-3x"></i>
+                </div>
+                <h1>Stopwatch</h1>
+                <div class="time" id="stopwatch-display">00:00:00</div>
+                <button class="start" onclick="startStopwatch()">
+                    <i class="fas fa-play"></i> Start
+                </button>
+                <button class="stop" onclick="stopStopwatch()">
+                    <i class="fas fa-pause"></i> Stop
+                </button>
+                <button class="reset" onclick="resetStopwatch()">
+                    <i class="fas fa-stop"></i> Reset
+                </button>
+            </div>
+        </div>
+        <div class="last-5">
+            <h1>Last 5 Stopwatch Times</h1>
+            <ul id="last-5-times">
+                <!-- Stopwatch times will be dynamically added here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
