@@ -97,4 +97,4 @@ function getRandomColor() {
   document.body.style.backgroundColor = randomColor;
 }
 
-setInterval(getRandomColor, 0.5); // Change background color every 5 seconds (adjust as needed)
+setInterval(getRandomColor, 0.5);
